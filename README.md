@@ -7,7 +7,8 @@ Required Tools:
 - Seaborn and Matplotlib to plot a nice graph.
 - Spotipy Python Library (click here for more info).
 - Spotify Credentials to access their Apis and Data acquisition (click here for more info).
-Spotify Audio Features:
+
+### Spotify Audio Features:
 Spotify uses a series of different features to classify tracks.
 - Acousticness: A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
 - Danceability: Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
