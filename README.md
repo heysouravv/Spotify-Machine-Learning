@@ -9,7 +9,7 @@ Required Tools:
 - Spotify Credentials to access their Apis and Data acquisition (click here for more info).
 
 ### Spotify Audio Features:
-Spotify uses a series of different features to classify tracks.
+Spotify uses a series of different features to classify tracks. [ Information from the Spotify Webpage. ]
 - Acousticness: A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
 - Danceability: Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
 - Energy: Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
