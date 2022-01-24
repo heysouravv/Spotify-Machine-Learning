@@ -36,10 +36,10 @@ Doing this simple analysis I quickly noticed that the most popular songs are Hap
 To normalize the features I used MinMaxScaler to scale the values between a range of [0,1] and preserving the shape of the original distribution. I also encoded the 4 labels because Neural Networks uses numerical values to train and test. Finally, I split the data by 80% for training and 20% for testing.
 - 2.2 Creating the model:
 To build the model I used the library Keras, this library is designed to enable fast experimentation with Deep Neural Networks, focused on being user-friendly. My main goal is to classify tracks in the 4 categories of moods (Calm, Energetic, Happy and Sad) so my model consists of a Multi-Class Neural Network with an input of 10 Features, 1 Layer with 8 nodes, and 4 outputs with the output Layer. I also need to use a Classifier as an Estimator, in this case, the Classifier is KerasClassifier, which takes as an argument a function that I created previously with the Neural Network model defined. The activation Function corresponds to a Rectified Linear Unit (Relu), the Loss function is a Logistic Function and Adam Gradient Descent Algorithm is the optimizer.
--- Important: I disabled the eager execution and v2 behavior of TensorFlow because I keep trying to understand and to learn how the library works in those modes
+  - Important: I disabled the eager execution and v2 behavior of TensorFlow because I keep trying to understand and to learn how the library works in those modes
 - 2.3 Evaluating the model:
 Using K-Fold Cross Validation I evaluated the estimator using the train data. The number of splits is K=10 shuffling all the values. The Accuracy of the model is the average of the accuracy of each fold, in this case, the Accuracy was **72.75%**.
 - 2.4 Training the Model:
 It’s important to mention that the model was trained with **640 samples** (80% of the main data).
-- 3. Accuracy of the Multi-Class Neural Network:
+### 3. Accuracy of the Multi-Class Neural Network:
 Finally to evaluate the accuracy of the model I plotted a Confusion Matrix using Seaborn Library and Matplotlib. I also calculated the accuracy score provided by Sklearn Library. With a Final Accuracy score of 76% and taking a look at the Confusion Matrix, I noticed my model is good classifying Calm and Sad songs, but it’s having some issues dealing with Energetic and Happy songs. I could modify some parameters like the batch size, epochs, or maybe aggregate or delete some track features to train my model and thus help to improve the accuracy of the model.
